@@ -18,18 +18,23 @@
                     <label for="name">Nome</label>
                     <input id="name" type="text" name="userName" required>
                     <br>
+
                     <label for="age">Idade</label>
                     <input id="age" type="number" name="userAge" min="12" max="100" required>
                     <br>
+
                     <label for="birthDate">Data de nascimento</label>
                     <input id="birthDate" type="date" name="userBirthDate">
                     <br>
+
                     <label for="email">Email</label>
                     <input id="email" type="email" name="userEmail" required>
                     <br>
+
                     <label for="phoneNumber">Telefone</label>
                     <input id="phoneNumber" type="tel" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="99999999999">
                     <br>
+                    
                     <label for="image">Upload de foto</label>
                     <input id="image" type="file" accept="image/*" name="userImage">
                     <br>
@@ -51,6 +56,7 @@
                     <input id="prefiroNaoInformar" type="radio" name="userGender" value="naoInformado">
                     <label for="prefiroNaoInformar">Prefiro não informar</label>
                     <br>
+
                     <label for="maritalStatus">Estado civil</label>
                     <select id="maritalStatus" name="userMaritalStatus">
                         <option value="naoInformado">:: Selecione ::</option>
@@ -60,6 +66,7 @@
                         <option value="uniaoEstavel">União estável</option>
                     </select>
                     <br>
+
                     <label for="state">Estado</label>
                     <select id="state" name="userState" required>
                         <option value="naoInformado">:: Selecione ::</option>
@@ -92,6 +99,7 @@
                         <option value="tocantins">Tocantins</option>
                     </select>
                     <br>
+
                     <label for="city">Cidade</label>
                     <input id="city" type="text" name="userCity" >
                 </fieldset>
@@ -114,6 +122,21 @@
                     <br>
                     <input id="tiktok" type="checkbox" name="userSocial" value="tiktok">
                     <label for="tiktok">TikTok</label>
+                    <br>
+                
+                    <label for="musicStyle">Estilo musical</label>
+                    <input list="styleTypes" id="musicStyle" type="text" name="userMusicStyle">
+                    <datalist id="styleTypes">
+                        <option value="Pop">
+                        <option value="Rock">
+                        <option value="Sertanejo">
+                        <option value="Indie">
+                        <option value="Kpop">
+                    </datalist>
+                    <br>
+
+                    <label for="favoriteColor">Cor favorita</label>
+                    <input id="favoriteColor" type="color" name="userFavoriteColor">
                 </fieldset>
                 
                 <button type="submit">Enviar</button>
